@@ -1,9 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import LandingPage from './components/LandingPage';
-import PurposeStatement from './components/PurposeStatement';
-import TaskCreationContainer from './components/TaskCreationContainer';
-import BugReportForm from './components/BugReportForm';
-import NotFoundPage from './pages/404page';
+import Home from './components/home';
 
 
 /* using v6 of react router
@@ -19,11 +15,7 @@ All you have to do is render a Route with a path of *, and React Router will mak
 // v6 uses element instead of component ... the angle bracket weren't needed around the component before
 const App = ()  => (
   <Routes>
-    <Route path="/" element={ <LandingPage/> } />
-    <Route path="/purpose-statement" element={ <PurposeStatement />} />
-    <Route path="/task-creation-container" element={ <TaskCreationContainer />} />
-    <Route path="/bug-report-form" element={ <BugReportForm />} />
-    <Route path="*" element={ <NotFoundPage />} />
+    <Route path="/" element={ <Home/> } />
   </Routes>
 );
 
